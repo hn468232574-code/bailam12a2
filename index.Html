@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài làm của 12A2</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #faf8f3;
+            color: #555;
+        }
+
+        /* Thanh điều hướng */
+        nav {
+            background-color: #f3eee5;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        nav h2 {
+            color: #9b8065;
+            font-size: 21px;
+            font-weight: normal;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            color: #756653;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #c58c91;
+        }
+
+        /* Tiêu đề */
+        .header {
+            text-align: center;
+            padding: 35px 20px;
+            background-color: #f8e9e5;
+        }
+
+        .header h1 {
+            color: #b77c82;
+            font-size: 34px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #8c7770;
+            font-size: 16px;
+        }
+
+        /* Ảnh bìa */
+        .banner {
+    width: 100%;
+    text-align: center;
+    background-color: #f5f0e8;
+    padding: 15px;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    max-height: 450px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    border-radius: 12px;
+}
+        /* Nội dung */
+        section {
+            padding: 45px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #a98568;
+            font-size: 27px;
+            margin-bottom: 18px;
+        }
+
+        .intro {
+            background-color: #fff;
+        }
+
+        .intro p {
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.9;
+            font-size: 16px;
+        }
+
+        /* Thư viện ảnh */
+        .gallery {
+            background-color: #f5f0e8;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .photo {
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 3px 12px
+                rgba(100, 80, 60, 0.08);
+            transition: 0.3s;
+        }
+
+        .photo:hover {
+            transform: translateY(-5px);
+        }
+
+        .photo img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .photo h3 {
+            color: #ad8580;
+            padding: 15px 10px 5px;
+            font-size: 18px;
+        }
+
+        .photo a {
+            display: inline-block;
+            color: #9a9a9a;
+            font-size: 13px;
+            margin: 8px 0 18px;
+            text-decoration: underline;
+        }
+
+        .photo a:hover {
+            color: #b77c82;
+        }
+
+        /* Chân trang */
+        footer {
+            background-color: #eee5d9;
+            text-align: center;
+            padding: 28px;
+        }
+
+        footer p {
+            color: #927e6b;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 15px;
+            }
+
+            .header h1 {
+                font-size: 27px;
+            }
+
+            .banner img {
+                height: 230px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Thanh menu -->
+    <nav>
+        <h2>Bài làm của 12A2</h2>
+
+        <ul>
+            <li><a href="#trangchu">Trang chủ</a></li>
+            <li><a href="#gioithieu">Giới thiệu</a></li>
+            <li><a href="#hinhanh">Hình ảnh</a></li>
+        </ul>
+    </nav>
+
+    <!-- Tiêu đề -->
+    <div class="header" id="trangchu">
+        <h1>Bài làm của 12A2</h1>
+        <p> của Nguyễn Hải Đăng và Lê Thái Sơn</p>
+    </div>
+
+    <!-- Ảnh bìa -->
+<div class="banner">
+    <img
+        src="ảnh/4e21817b-6f8c-41ee-86f2-45a6080880d1.jpg"
+        alt="Hình ảnh bìa">
+</div>
+
+    <!-- Giới thiệu -->
+    <section class="intro" id="gioithieu">
+
+        <h2>Giới thiệu</h2>
+
+        <p>
+            Chào mừng mọi người đến với trang web của lớp 12A2.
+            Đây là nơi chúng mình chia sẻ một số hình ảnh đẹp
+            về thiên nhiên, cảnh vật và cuộc sống xung quanh.
+            Hy vọng Cô sẽ có những phút giây thư giãn
+            khi ghé thăm bài làm này.
+        </p>
+
+    </section>
+
+    <!-- Hình ảnh -->
+    <section class="gallery" id="hinhanh">
+
+        <h2>Một số hình ảnh</h2>
+
+        <p>Những hình ảnh về nhà cửa và cảnh đẹp thiên nhiên.</p>
+
+        <div class="gallery-container">
+
+            <div class="photo">
+                <img
+                src="https://www.garden.eco/img/image9_garden-house-ideas_innovative-shapes.jpg"
+                alt="Ngôi nhà">
+
+                <h3>Những ngôi nhà đẹp</h3>
+
+                <a href="https://www.garden.eco/garden-house-ideas"
+                   target="_blank">
+                   Xem ảnh gốc
+                </a>
+            </div>
+
+            <div class="photo">
+                <img
+                src="https://cellphones.com.vn/sforum/wp-content/uploads/2023/10/canh-dep-2.jpg"
+                alt="Cánh đồng lúa">
+
+                <h3>Cảnh đẹp Việt Nam</h3>
+
+                <a href="https://cellphones.com.vn/sforum/canh-dep-thien-nhien-dep"
+                   target="_blank">
+                   Xem ảnh gốc
+                </a>
+            </div>
+
+            <div class="photo">
+                <img
+                src="https://ktmt.vnmediacdn.com/images/2021/09/03/7-1630640575-khau-pha.jpg"
+                alt="núi ">
+
+                <h3>Núi rừng</h3>
+
+                <a href="https://xaydungso.vn/bai-viet-khac/tan-huong-700-anh-thien-nhien-nui-rung-tuyet-dep-voi-nhung-khung-canh-hoang-so-vi-cb.html"
+                   target="_blank">
+                   Xem ảnh gốc
+                </a>
+            </div>
+
+            <div class="photo">
+                <img
+                src="https://puolotrip.com/uploads/images/2023/09/Bien-nha-trang-2-jpg.webp"
+                alt="Biển Nha trang">
+
+                <h3>Biển tại các địa điểm việt nam</h3>
+
+                <a href="https://puolotrip.com/du-lich-bien-nha-trang/"
+                   target="_blank">
+                   Xem ảnh gốc
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Chân trang -->
+    <footer>
+        <p>Trang web này được lập bởi Đăng và Sơn.</p>
+        <p>Bài làm của 12A2, không có sự can thiệp của AI.</p>
+    </footer>
+
+</body>
+</html>
